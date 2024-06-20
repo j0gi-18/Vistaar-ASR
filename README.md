@@ -1,5 +1,5 @@
 # Vistaar-ASR
-This repository contains the code for evaluating the Whisper Hindi speech-to-text model on the Kathbath dataset. The model is trained using the Whisper framework and is designed to recognize Hindi speech. The evaluation script uses the evaluation.py file to test the model on the Kathbath dataset.
+This repository evaluates the Whisper Hindi speech-to-text model on the Kathbath dataset. The model is trained using the Whisper framework and is designed to recognize Hindi speech. The evaluation script uses the evaluation.py file to test the model on the Kathbath dataset.
 
 # Setup
 1. Clone the repository using git clone https://github.com/AI4Bharat/vistaar.git.
@@ -22,4 +22,5 @@ This repository contains the code for evaluating the Whisper Hindi speech-to-tex
 * --language: Language to evaluate (Hindi).
 
 # Output
-The evaluation script outputs the model's performance metrics, including the character error rate (CER) and word error rate (WER), with the time taken for evaluation.
+The evaluation script outputs the model's performance metrics, including the character error rate (CER): 3.76% and word error rate (WER): 10.42% with the time taken for evaluation, 56 min.
+
