@@ -14,12 +14,17 @@ This repository evaluates the Whisper Hindi speech-to-text model on the Kathbath
 # Evaluation
 1. Unzip the downloaded files using unzip kathbath.zip, unzip hindi_models.zip, and tar -xf GV_Eval_3h.tar.gz.
 2. Run the evaluation script using python evaluation.py with the following arguments:
-* --model_path: Path to the Whisper Hindi model.
-* --manifest_path: Path to the Kathbath dataset manifest file.
-* --manifest_name: Name of the manifest file.
-* --device: Device to use (GPU or CPU).
-* --batch_size: Batch size for evaluation.
-* --language: Language to evaluate (Hindi).
+
+
+```bash
+python evaluation.py \
+  --model_path /path/to/whisper-hindi-model \
+  --manifest_path /path/to/kathbath/manifest.json \
+  --manifest_name manifest \
+  --device GPU/or/CPU \
+  --batch_size 8 \
+  --language Hindi/or/other/language
+```
 
 # Output
 The evaluation script outputs the model's performance metrics, including the character error rate (CER): 3.76% and word error rate (WER): 10.42% with the time taken for evaluation, 56 min.
